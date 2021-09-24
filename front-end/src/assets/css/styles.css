@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+.text-test {
+  margin-left: 8px;
+}
+.btn-event-list {
+  margin-left: 18px;
+}
+.myForm {
+  grid-area: 3 / 3 / 4 / 4;
+  text-align: center;
+  padding: 25px 200px !important;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 0px;
+}
+.ant-row.ant-form-item {
+  display: block;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.ant-row.ant-form-item * label {
+  white-space: nowrap;
+  font-weight: bold;
+}
+span.ant-form-item-children-icon {
+  margin-top: -13px !important;
+  right: 40px !important;
+  margin-left: -44px !important;
+}
+.ant-form-item-control-input-content .timePicker {
+  width: 350px;
+}
+
+:root {
+  --color-primary: #ff8400;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.logo {
+  float: left;
+  width: 250px;
+  height: 40px;
+  margin: 12px 24px 16px 0;
+  background: url("../img/logo3.png");
+  background-size: cover;
+}
+.site-layout .site-layout-background {
+  background: #fff;
+}
+[data-theme="dark"] .site-layout .site-layout-background {
+  background: #141414;
+}
