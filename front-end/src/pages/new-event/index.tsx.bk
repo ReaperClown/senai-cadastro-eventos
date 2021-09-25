@@ -30,29 +30,17 @@ export { TimePicker, Button, DatePicker };
 moment.locale("pt-br");
 moment().format("LT");
 
-async function loadNames() {
-  const response = await fetch('https://api-cadastro-eventos.herokuapp.com/api/v1/eventos');
-  const names = await response.json();
-  console.log(names); 
-  // logs [{ name: 'Joker'}, { name: 'Batman' }]
-}
-
-
 const { Header, Content, Footer } = Layout;
 const fs = require("fs");
 
 const FormSizeDemo = () => {
+  // const [values, setValues] = useState();
   const [form] = Form.useForm();
+  const history = useHistory();
 
-  loadNames();
+  // const datePicker = document.getElementsByClassName("ant-picker-input")[0];
 
-  // const [contacts, setContacts] = useState(data);
-  const [addFormData, setAddFormData] = useState({
-    fullName: "",
-    address: "",
-    phoneNumber: "",
-    email: "",
-  });
+  // const datePickerValue = datePicker.getElementsByTagName("input")[0].value;
 
   const onFinish = (values: { id: any; nome: any; data: any; participantes: any; horario: any; }) => {
     message.success("Evento cadastrado com sucesso!");
